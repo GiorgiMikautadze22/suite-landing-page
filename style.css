@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue";
+}
+
+:root {
+  --Darkblue: #172339;
+  --grey: #49566d;
+  --cream: #f3ede7;
+  --creamwhite: #faf8f6;
+  --purpleish: #a060ff;
+  --pik: #cb30e3;
+  --orange: #ffa84e;
+}
+
+body {
+  background-color: var(--creamwhite);
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.top h1 {
+  font-size: 32px;
+  color: var(--Darkblue);
+  font-weight: 700;
+}
+
+.top button {
+  width: 182px;
+  height: 48px;
+  border: 1px solid #172339;
+  border-radius: 6px;
+  background-color: var(--creamwhite);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Darkblue);
+}
+
+.curvature {
+  margin: 56px 53px 8px 170px;
+}
+
+h2 {
+  font-size: 38px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey);
+  line-height: 28px;
+  margin: 32px 16px 32px 16px;
+}
+
+button {
+  width: 256px;
+  height: 61px;
+  background-color: var(--Darkblue);
+  color: var(--creamwhite);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-left: 16px;
+  border: none;
+}
+
+.phone {
+  margin: 56px 16px 56px 16px;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info p {
+  text-align: center;
+  margin-top: 1px;
+  letter-spacing: 2.5px;
+}
+
+.description {
+  background-color: var(--Darkblue);
+  border-radius: 15px;
+  margin-top: 265px;
+  padding: 261px 16px 64px 16px;
+}
+
+/* .description .relative {
+  position: relative;
+  left: 71px;
+  bottom: 181px;
+} */
+
+.curvature2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.description h2 {
+  font-size: 40px;
+  color: var(--creamwhite);
+  text-align: center;
+  margin-top: 37px;
+}
+
+.description p {
+  text-align: center;
+  font-size: 18px;
+  color: var(--cream);
+  font-weight: 400;
+  margin: 40px 0px 40px 0px;
+}
+
+.description h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--creamwhite);
+  text-align: center;
+}
+
+.description h5 {
+  color: var(--cream);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer h1 {
+  text-align: center;
+  margin-top: 56px;
+}
+
+footer h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grey);
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.absolute {
+  position: absolute;
+  /* top: 1174px;
+  left: 71px; */
+  top: 193%;
+  left: 20%;
+}
+
+.tablet {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding: 0px 40px 0px 39px;
+  }
+  .top {
+    margin: 40px 0px 80px 0px;
+    justify-content: space-between;
+  }
+
+  .top button {
+    width: 219px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .curvature {
+    margin-left: 230px;
+    width: 231px;
+    height: 29px;
+  }
+
+  h2 {
+    font-size: 56px;
+    margin: 16px 150px 0px 0px;
+  }
+
+  p {
+    margin: 40px 379px 40px 0px;
+  }
+
+  .text button {
+    margin-left: 0px;
+  }
+  .tablet {
+    position: absolute;
+    top: 180px;
+    left: 450px;
+    z-index: -1;
+  }
+  .phone {
+    display: none;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .text {
+    margin-bottom: 100px;
+  }
+
+  .info p {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .absolute {
+    left: 35%;
+    /* top: 935px; */
+    top: 145%;
+  }
+
+  .curvature2 {
+    margin-bottom: 37px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description h2 {
+    margin: 0px 0px 0px 0px;
+  }
+  .description p {
+    margin: 40px 58px 40px 58px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+  }
+
+  footer h1 {
+    margin-top: 0px;
+  }
+
+  footer h6 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    padding: 0px 164px 0px 167px;
+  }
+
+  h2 {
+    font-size: 72px;
+    margin-right: 250px;
+  }
+
+  .curvature {
+    margin-left: 300px;
+    width: 287px;
+    height: 36px;
+  }
+
+  .combine {
+    display: flex;
+  }
+
+  .info {
+    display: grid;
+    margin-right: 80px;
+  }
+
+  .info h3 {
+    text-align: start;
+  }
+
+  .info p {
+    text-align: start;
+  }
+
+  .tablet {
+    width: 350px;
+    height: 600px;
+    left: 650px;
+  }
+
+  .description h2 {
+    text-align: start;
+    margin-left: 634px;
+  }
+  .description p {
+    text-align: start;
+    margin-left: 634px;
+  }
+
+  .description h5 {
+    text-align: start;
+    margin-left: 634px;
+  }
+
+  .description h4 {
+    text-align: start;
+    margin-left: 634px;
+  }
+
+  .description {
+    padding-top: 0px;
+    height: 545px;
+  }
+
+  .curvature2 {
+    width: 64px;
+    height: 52px;
+    position: relative;
+    top: 120px;
+  }
+
+  .absolute {
+    width: 360px;
+    height: 589.56px;
+    top: 133.8%;
+    left: 20%;
+  }
+}
